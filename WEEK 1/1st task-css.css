@@ -1,0 +1,176 @@
+*{
+    font-family: sans-serif;
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .1s linear;
+
+}
+
+
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 15px;
+   }
+
+
+.container{
+    background:linear-gradient(45deg,blueviolet,lightgreen) ;
+
+    padding: 15px 9%;
+    padding-bottom: 100px;
+    margin: auto;
+    
+}
+
+
+.container .heading{
+    text-align: center;
+    padding-bottom :30px;
+    color: #fff;text-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    font-size: 50px;
+}
+
+.container .box-container .box{
+    box-shadow: 0 5px 10px rgba(0, 0, 0,.2);
+    border-radius: 5px;
+    background: #fff;
+   
+   text-align: center;
+    padding: 10PX 30px 30px 20PX;
+}
+
+
+.container .box-container .box img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+}
+
+
+.container .box-container .box ol{
+    color:#777;
+    font-size: 15px;
+    line-height: 1.8;
+    text-align: left;
+    list-style: disc;
+}
+
+
+ol{
+    padding-left: 10px;
+}
+
+
+.container .box-container .box:hover{
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, .3);
+    transform: scale(1.03);
+}
+
+
+@media(max-width:800px){
+    .container{
+        padding: 20px;
+    }
+}
+
+
+.container .box-container .box .btn:hover{
+    letter-spacing: 1px;
+transform: scale(1.1);
+box-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+align-items: center;
+}
+
+
+.container .box-container .box .btn{
+    margin-top: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+
+.topbar{
+    display: flex;
+    margin: 2px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:left;
+    padding: 1px;
+    color:red;
+
+    
+
+}
+
+
+.topbar img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+
+.topbar button{
+    background: linear-gradient(45deg,);
+    cursor: pointer;
+    margin: 10px;
+    font-size: large;
+    height: 25px;
+    padding: 1px 2px 1px 2px;
+    border-radius: 10px;
+    margin: 2px;
+    background-color: transparent;
+    
+}
+    
+
+
+.topbar button:hover{
+    letter-spacing: 2px;
+    background-color: slategray;
+    
+}
+
+.topbar .righttop {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+
+}
+
+
+.topbar:hover{
+    
+    transition: 0.5s ease-in-out;
+
+}
+.bottom{
+    display:flex ;
+    justify-content: space-around;
+
+}
+
+.bottom img{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 10px;
+
+
+}
+.email{
+    padding: 0;
+    height: 20px;
+    font-size: large;
+}
+    
+.bottom img:hover{
+    transform: scale(1.5);
+}
+
+
